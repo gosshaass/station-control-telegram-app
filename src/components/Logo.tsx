@@ -1,5 +1,3 @@
-import { Shield, Zap } from "lucide-react";
-
 const Logo = ({ size = "default" }: { size?: "small" | "default" | "large" }) => {
   const sizeClasses = {
     small: "text-2xl",
@@ -7,24 +5,12 @@ const Logo = ({ size = "default" }: { size?: "small" | "default" | "large" }) =>
     large: "text-6xl md:text-7xl"
   };
 
-  const iconSizes = {
-    small: 24,
-    default: 40,
-    large: 56
-  };
-
   return (
-    <div className="flex items-center justify-center space-x-2 animate-fade-in">
-      <div className="relative">
-        <Shield 
-          size={iconSizes[size]} 
-          className="text-primary animate-glow" 
-          fill="currentColor"
-        />
-        <Zap 
-          size={iconSizes[size] * 0.6} 
-          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-accent" 
-        />
+    <div className="flex items-center justify-center space-x-3 animate-fade-in">
+      <div className="relative bg-gradient-primary rounded-lg p-3 shadow-glow-primary">
+        <div className="font-tech font-black text-xl text-primary-foreground">
+          EX
+        </div>
       </div>
       <div className={`font-tech font-black tracking-wider ${sizeClasses[size]}`}>
         <span className="bg-gradient-primary bg-clip-text text-transparent">

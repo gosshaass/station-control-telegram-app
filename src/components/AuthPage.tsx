@@ -34,27 +34,12 @@ const AuthPage = () => {
               Добро пожаловать
             </CardTitle>
             <CardDescription className="text-muted-foreground mt-2">
-              Управление Яндекс Станции через Telegram
+              Управление Яндекс Станции
             </CardDescription>
           </div>
         </CardHeader>
 
         <CardContent className="space-y-6">
-          <div className="space-y-4">
-            <div className="flex items-center space-x-3 text-sm text-muted-foreground">
-              <Smartphone className="text-primary" size={16} />
-              <span>Telegram Mini App</span>
-            </div>
-            <div className="flex items-center space-x-3 text-sm text-muted-foreground">
-              <Shield className="text-accent" size={16} />
-              <span>Безопасная авторизация</span>
-            </div>
-            <div className="flex items-center space-x-3 text-sm text-muted-foreground">
-              <Zap className="text-primary" size={16} />
-              <span>Быстрое подключение</span>
-            </div>
-          </div>
-
           <Button 
             onClick={handleYandexAuth}
             variant="gradient"
@@ -65,9 +50,12 @@ const AuthPage = () => {
             Войти через Яндекс ID
           </Button>
 
-          <div className="text-center">
+          <div className="text-center space-y-1">
             <p className="text-xs text-muted-foreground font-mono">
               v1.0.0 | EX-PLOIT TECH
+            </p>
+            <p className="text-xs text-muted-foreground/60">
+              Сделано в сотрудничестве с Яндекс
             </p>
           </div>
         </CardContent>
