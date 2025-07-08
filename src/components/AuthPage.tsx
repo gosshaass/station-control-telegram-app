@@ -7,6 +7,8 @@ const AuthPage = () => {
   const handleYandexAuth = () => {
     // TODO: Implement Yandex ID authentication
     console.log("Yandex auth clicked");
+    // Временно перенаправляем на главную страницу
+    window.location.href = "/main";
   };
 
   return (
